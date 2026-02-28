@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router"
 import HomeWrapper from "./wrapers/HomeWrapper"
 import Home from "./pages/Home"
 import Invoice from "./pages/Invoice"
+import DownloadPdf from "./pages/DownloadPdf"
 
 const App = () => {
   const router = createBrowserRouter([
@@ -16,6 +17,10 @@ const App = () => {
         {
           path: 'invoice',
           element: <Invoice />
+        },
+        {
+          path: 'download',
+          element: <DownloadPdf />
         },
       ]
     }

@@ -26,7 +26,7 @@ const Header = () => {
                   <ul className="ulNav flex gap-5 font-medium text-xl h-full px-5 lg:gap-20">
                       {
                           Menu?.map(item => 
-                              <li key={item} className="liNav cursor-pointer hover:underline mt-2.5">
+                              <li key={item?.name} className="liNav cursor-pointer hover:underline mt-2.5">
                                   <Link to={item?.path}>{item?.name}</Link>
                               </li>
                           )
