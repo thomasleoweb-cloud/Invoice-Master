@@ -1,7 +1,14 @@
+import { createBrowserRouter, RouterProvider } from "react-router"
+import HomeWrapper from "./wrapers/HomeWrapper"
+
 const App = () => {
-  return (
-    <div>Hello World</div>
-  )
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <HomeWrapper />
+    }
+  ])
+  return <RouterProvider  router={router} />
 }
 
 export default App
