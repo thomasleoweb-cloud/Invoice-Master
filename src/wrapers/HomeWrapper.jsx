@@ -4,14 +4,14 @@ import { Outlet } from "react-router"
 
 const HomeWrapper = () => {
   return (
-     <div className="MainLayout grid grid-cols-6 grid-rows-10 min-h-screen">
-      <div className="col-span-6 row-span-1 bg-blue-400">
+     <div className="MainLayout flex flex-col min-h-screen">
+      <div className="shrink-0 bg-blue-400 pb-2">
         <Header  />
       </div>
-      <div className="col-span-6 row-span-9 bg-#fffff">
+      <div className="grow bg-#fffff">
         <Outlet  />
       </div>      
-      <div className="col-span-6 row-span-1 bg-blue-400">
+      <div className="shrink-0 bg-blue-400">
         <Footer  />
       </div>
     </div>
